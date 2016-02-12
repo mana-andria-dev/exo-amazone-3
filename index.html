@@ -1,0 +1,55 @@
+<html>
+
+  <head>
+    <base href="/">   
+    <title>Angular 2 QuickStart</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="bootstrap/css/style.css" rel="stylesheet" media="screen">
+
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfills, in this exact order -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/http.dev.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
+    <script src="//code.angularjs.org/1.2.20/angular.js"></script>
+    <script src="/node_modules/ng-file-upload/dist/ng-file-upload.min.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script>
+      System.config({
+          map: {
+              'rxjs': 'node_modules/rxjs'
+          },
+          packages: {
+              'app': {defaultExtension: 'js'},
+              'rxjs': {defaultExtension: 'js'}
+          },
+          paths: {
+              'rxjs/operator/*': 'node_modules/rxjs/add/operator/*.js',
+              'rxjs/*': 'node_modules/rxjs/*.js'
+          }
+      });
+      System.import('app/main')
+            .then(null, console.error.bind(console));
+    </script>
+
+  </head>   
+
+  <!-- 3. Display the application -->
+  <body class="container">
+    <my-app>Loading...</my-app>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+
+</html>

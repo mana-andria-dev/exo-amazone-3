@@ -1,0 +1,35 @@
+
+<hr>
+<div class="row-fluid">	
+	<div class="span8 well">			
+	    <span class="btn btn-default btn-file">
+	    	<input type="file" (change)="fileChangeEvent($event)" placeholder="Upload file...">
+	    	Browse your file
+		</span>		
+		{{name}}	
+		<button type="submit" (click)="upload()" class="btn btn-primary pull-right" [disabled]="disableUpload">Ajouter</button>
+
+		<div>
+			<br><h1 class="textAjouter">Vous pouvez ajouter des images içi.</h1>
+		</div>		
+
+	</div>	
+	<div class="span4 well">		
+		<span *ngIf="imageNotExist" class="center">
+			<p>Uplaoding ...</p>
+			<img src="../../images/uploading6.gif" class="load">
+		</span> 
+		<div *ngIf="imageExist">
+			<span>
+				<p class="center">Image ajouter</p>
+			</span>
+			<span class="span12 img-polaroid">			
+				<img src="{{path}}">				
+			</span> 			
+		</div>		
+	</div>
+</div>
+
+
+
+

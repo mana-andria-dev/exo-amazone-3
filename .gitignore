@@ -1,0 +1,16 @@
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# temp files
+.DS_Store
+
+# modules
+node_modules
+nbproject
+.idea

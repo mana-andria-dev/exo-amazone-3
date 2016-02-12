@@ -1,0 +1,53 @@
+.test {
+	height: 30px !important;
+	width: 100%
+}
+
+tr:hover {
+	cursor: pointer;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.center {
+    text-align: center;
+}
+
+.imgline {
+    display: inline;
+    margin-top: 2px;
+    width: 280;
+    height: 200; 
+}
+
+.imageList {
+    margin-left: 10px;
+}
+
+.textAjouter{
+    font-family: 'Brush Script MT', serif;
+    font-size: 40px;
+}
+
+.load {
+    width: 100px;
+    margin-left: 80px;
+}

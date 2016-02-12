@@ -1,0 +1,16 @@
+<br>
+<div>
+	<div class="navbar">
+		<div class="navbar-inner">
+			<a class="brand" [routerLink]="['/Home']">Navigation</a>
+			<ul class="nav">
+				<li><a [routerLink]="['/Home']">Accueil</a></li>
+				<li><a [routerLink]="['/Image']">Ajouter une image</a></li>
+				<li><a [routerLink]="['/ImageList']">Mes Images</a></li>
+				<li><a [routerLink]="['/About']">A propos</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<router-outlet></router-outlet>
+</div>
